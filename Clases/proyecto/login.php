@@ -17,14 +17,14 @@
         <form>
           <!-- Email input -->
           <div class="form-outline mb-4">
-            <input type="email" id="form1Example13" class="form-control form-control-lg" />
-            <label class="form-label" for="form1Example13">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" class="form-control form-control-lg" />
+            <label class="form-label" for="correo">Correo electrónico</label>
           </div>
 
           <!-- Password input -->
           <div class="form-outline mb-4">
-            <input type="password" id="form1Example23" class="form-control form-control-lg" />
-            <label class="form-label" for="form1Example23">Contraseña</label>
+            <input type="password" id="pass" name="pass" class="form-control form-control-lg" />
+            <label class="form-label" for="pass">Contraseña</label>
           </div>
 
           <div class="d-flex justify-content-around align-items-center mb-4">

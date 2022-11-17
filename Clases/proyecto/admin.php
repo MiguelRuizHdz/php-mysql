@@ -30,8 +30,8 @@ while ($arreglo=mysqli_fetch_array($query)){
     echo "<td>$arreglo[4]</td>";
     echo "<td>$arreglo[5]</td>";
     echo "<td>$arreglo[6]</td>";
-    echo "<td><a href='actualizar.php?id=$arreglo[0]'><img src='img/editar.png'></a></td>";
-    echo "<td><a href='admin.php?id=$arreglo[0]&idborrar=2'><img src='img/borrar.png'></a></td>";
+    echo "<td><a href='actualizar.php?id=$arreglo[0]'><i class='fa-solid fa-pen-to-square'></i></a></td>";
+    echo "<td><a href='admin.php?id=$arreglo[0]&idborrar=2'><i class='fa-solid fa-trash'></i></a></td>";
     echo "</tr>";
 }
 echo "</table>";
