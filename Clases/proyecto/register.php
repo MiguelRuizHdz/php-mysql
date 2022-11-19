@@ -59,7 +59,7 @@
             <p class="text-center fw-bold mx-3 mb-0 text-muted">Ó</p>
           </div>
 
-          <a class="btn btn-primary btn-lg btn-block" style="background-color: #2F2E41" href="register.php"
+          <a class="btn btn-primary btn-lg btn-block" style="background-color: #2F2E41" href="login.php"
             role="button">Iniciar sesión
           </a>
 

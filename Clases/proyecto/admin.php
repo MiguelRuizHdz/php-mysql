@@ -1,4 +1,15 @@
 <?php
+session_start();
+if(!isset($_SESSION['rol'])){
+    header('location:login.php');
+}
+else {
+    if ((($_SESSION['rol']!=1))) {
+        header('location:index2.php');
+    }
+}
+?>
+<?php
 // Autor: Miguel Angel Ruiz Hernández
 include("include/bootstrap.php");
 include("include/menu_admin.php");

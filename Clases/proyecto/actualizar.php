@@ -1,5 +1,6 @@
 <?php
 // Autor: Miguel Angel Ruiz Hernández
+session_start();
 include("include/bootstrap.php");
 include("include/menu_admin.php");
 require("script/connect_db.php");
@@ -26,9 +27,9 @@ while($row=mysqli_fetch_array($ressql)){
 <div class="container mt-3">
     <div class="row d-flex justify-content-center">
         <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
-            <h3>Actualizar</h3>
+            <h3>Actualizar Usuario</h3>
             <form action="script/ejecutar_actualizar.php" method="post">
-                Id <input name="id" type="text" class="form-control form-control-lg" disabled value="<?php echo $id?>" readonly><br>
+                Id <input name="id" type="text" class="form-control form-control-lg" value="<?php echo $id?>" readonly><br>
                 Nombre <input name="nom" type="text" class="form-control form-control-lg"  value="<?php echo $nom?>"><br>
                 Usuario <input name="user" type="text" class="form-control form-control-lg"  value="<?php echo $user?>"><br>
                 Correo <input name="correo" type="text" class="form-control form-control-lg"  value="<?php echo $correo?>"><br>

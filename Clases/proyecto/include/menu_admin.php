@@ -1,5 +1,7 @@
 <?php
     include("bootstrap.php");
+
+    // session_start();
 ?>
 
 <!-- Navbar -->
@@ -36,14 +38,26 @@
           <a class="nav-link active" href="admin.php">Usuarios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="productos.php">Productos</a>
+          <a class="nav-link active" href="productos.php">Productos</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link active" href="clase2/cal1.php">Clase 2 Calculadora</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="clase2/contacto.php">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="clase2/Ejemplo_get.php">Ejemplo_get</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="clase2/form_base/form1.php">Formulario</a>
+        </li>
+        <!-- <li class="nav-item">
           <a class="nav-link" href="index2.php">Ver Productos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="productos.php">Agregar producto </a>
-        </li>
+        </li> -->
       </ul>
       <!-- Left links -->
     </div>
@@ -57,39 +71,11 @@
         <span class="badge rounded-pill badge-notification bg-danger">1</span>
       </a>
 
-
-      <!-- Avatar -->
-      <div class="dropdown">
-        <a
-          class="dropdown-toggle d-flex align-items-center hidden-arrow"
-          href="#"
-          id="navbarDropdownMenuAvatar"
-          role="button"
-          data-mdb-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <img
-            src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-            class="rounded-circle"
-            height="25"
-            alt="Black and White Portrait of a Man"
-            loading="lazy"
-          />
-        </a>
-        <ul
-          class="dropdown-menu dropdown-menu-end"
-          aria-labelledby="navbarDropdownMenuAvatar"
-        >
-          <li>
-            <a class="dropdown-item" href="#">My profile</a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#">Logout</a>
-          </li>
-        </ul>
-      </div>
+      <!-- Right elements -->
+      <a class="me-4 text-white">Bienvenido <?php echo $_SESSION['username'] ?></a>
+      <a class="me-4 text-white" href="script/desconectar.php">Logout</a>
     </div>
-    <!-- Right elements -->
+
   </div>
   <!-- Container wrapper -->
 </nav>

@@ -1,9 +1,14 @@
 <?php
     include("bootstrap.php");
+
+    // session_start();
+
+    // $_SESSION['username']=$username;
+
 ?>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <!-- Container wrapper -->
   <div class="container-fluid">
     <!-- Toggle button -->
@@ -32,11 +37,11 @@
       </a>
       <!-- Left links -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link active" href="admin.php">Usuarios</a>
-        </li>
+        </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="productos.php">Productos</a>
+          <a class="nav-link active" href="index2.php">Ver Productos</a>
         </li>
       </ul>
       <!-- Left links -->
@@ -46,32 +51,15 @@
     <!-- Right elements -->
     <div class="d-flex align-items-center">
       <!-- Icon -->
-      <a class="text-reset me-3" href="#">
+
+      <input class="me-5 btn btn-secondary" type="button" value="Comprar" onclick="Comprar();">
+      <!-- <a class="text-reset me-3" href="#">
         <i class="fas fa-shopping-cart"></i>
         <span class="badge rounded-pill badge-notification bg-danger">1</span>
-      </a>
+      </a> -->
+      <a class="me-4 text-white">Bienvenido <?php echo $_SESSION['username'] ?></a>
+      <a class="me-4 text-danger bold"class="dropdown-item" href="script/desconectar.php">Logout</a>
 
-
-      <!-- Avatar -->
-      <div class="dropdown">
-        <a
-          class="dropdown-toggle d-flex align-items-center hidden-arrow"
-          href="#"
-          id="navbarDropdownMenuAvatar"
-          role="button"
-          data-mdb-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <img
-            src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
-            class="rounded-circle"
-            height="25"
-            alt="Black and White Portrait of a Man"
-            loading="lazy"
-          />
-        </a>
-
-      </div>
     </div>
     <!-- Right elements -->
   </div>
