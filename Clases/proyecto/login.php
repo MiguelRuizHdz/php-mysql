@@ -14,7 +14,7 @@
       <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
         <h2>Inicio de sesión</h2>
         <br>
-        <form>
+        <form action="script/ejecutar_login.php" method="post">
           <!-- Email input -->
           <div class="form-outline mb-4">
             <input type="email" id="correo" name="correo" class="form-control form-control-lg" />
